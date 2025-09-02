@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roar Threads - Unleash Your Style, Empower Your Story</title>
+    <meta name="description" content="Roar Threads - Premium fashion that empowers. Shop sustainable, inclusive clothing with quality craftsmanship. Express your unique style with confidence.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="main-header" id="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/dc68dfd9-dbcb-4e28-9958-a9a5940e1ace.png" alt="Roar Threads Logo" class="logo">
+                </div>
+                
+                <div class="navbar-menu" id="navbar-menu">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <div class="dropdown">
+                        <a href="#collections" class="nav-link">Collections</a>
+                        <div class="dropdown-content">
+                            <a href="#new-arrivals">New Arrivals</a>
+                            <a href="#best-sellers">Best Sellers</a>
+                            <a href="#tshirts">T-Shirts</a>
+                            <a href="#hoodies">Hoodies</a>
+                            <a href="#accessories">Accessories</a>
+                        </div>
+                    </div>
+                    <a href="#sustainable" class="nav-link">Sustainable</a>
+                    <a href="#sale" class="nav-link">Sale</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#blog" class="nav-link">Blog</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <div class="navbar-actions">
+                    <div class="search-container">
+                        <input type="search" placeholder="Search products..." class="search-input" id="search-input">
+                        <button class="search-btn">🔍</button>
+                    </div>
+                    <button class="icon-btn" id="account-btn">👤</button>
+                    <button class="icon-btn" id="wishlist-btn">♥ <span class="badge" id="wishlist-count">0</span></button>
+                    <button class="icon-btn" id="cart-btn">🛒 <span class="badge" id="cart-count">0</span></button>
+                </div>
+                
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main id="main-content">
+        
+        <!-- Homepage Section -->
+        <section id="home" class="page-section active">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-image">
+                        <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/75954aa5-112f-4995-a586-c60eece633b6.png" alt="Hero Banner - Diverse Fashion Models">
+                    </div>
+                    <div class="hero-text">
+                        <h1>Unleash Your Style, Empower Your Story</h1>
+                        <p>Discover premium fashion that celebrates individuality and empowers confidence. Quality meets sustainability in every thread.</p>
+                        <div class="hero-cta">
+                            <button class="btn btn--primary btn--lg">Shop Now</button>
+                            <button class="btn btn--outline btn--lg">Discover Your Style</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Promotional Banners -->
+            <div class="promo-section">
+                <div class="container">
+                    <div class="promo-grid">
+                        <div class="promo-card">
+                            <h3>Flash Sale - Up to 50% Off</h3>
+                            <p>Limited time offer on selected items</p>
+                            <small class="urgency">Ends in 2 days!</small>
+                            <button class="btn btn--primary">Shop Sale</button>
+                        </div>
+                        <div class="promo-card">
+                            <h3>Free Shipping</h3>
+                            <p>On orders over $75</p>
+                            <button class="btn btn--secondary">Shop Now</button>
+                        </div>
+                        <div class="promo-card">
+                            <h3>New Drop Friday</h3>
+                            <p>Fresh styles every week</p>
+                            <button class="btn btn--secondary">Preview Collection</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Collections -->
+            <div class="collections-section">
+                <div class="container">
+                    <h2>Featured Collections</h2>
+                    <div class="collections-grid">
+                        <div class="collection-card" data-category="new-arrivals">
+                            <div class="collection-image">
+                                <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/39911dbf-48af-4e86-9077-e07f7a1a32d8.png" alt="New Arrivals">
+                            </div>
+                            <div class="collection-info">
+                                <h3>New Arrivals</h3>
+                                <p>Fresh styles that just dropped</p>
+                                <span class="product-count">24 items</span>
+                            </div>
+                        </div>
+                        <div class="collection-card" data-category="best-sellers">
+                            <div class="collection-image">
+                                <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/39911dbf-48af-4e86-9077-e07f7a1a32d8.png" alt="Best Sellers">
+                            </div>
+                            <div class="collection-info">
+                                <h3>Best Sellers</h3>
+                                <p>Customer favorites</p>
+                                <span class="product-count">18 items</span>
+                            </div>
+                        </div>
+                        <div class="collection-card" data-category="tshirts">
+                            <div class="collection-image">
+                                <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/39911dbf-48af-4e86-9077-e07f7a1a32d8.png" alt="T-Shirts">
+                            </div>
+                            <div class="collection-info">
+                                <h3>T-Shirts</h3>
+                                <p>Comfortable essentials</p>
+                                <span class="product-count">45 items</span>
+                            </div>
+                        </div>
+                        <div class="collection-card" data-category="hoodies">
+                            <div class="collection-image">
+                                <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/39911dbf-48af-4e86-9077-e07f7a1a32d8.png" alt="Hoodies">
+                            </div>
+                            <div class="collection-info">
+                                <h3>Hoodies</h3>
+                                <p>Cozy essentials</p>
+                                <span class="product-count">32 items</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- USPs Section -->
+            <div class="usp-section">
+                <div class="container">
+                    <h2>Why Choose Roar Threads?</h2>
+                    <div class="usp-grid">
+                        <div class="usp-item">
+                            <div class="usp-icon">🌱</div>
+                            <h4>Ethically Made</h4>
+                            <p>Fair trade practices and ethical production</p>
+                        </div>
+                        <div class="usp-item">
+                            <div class="usp-icon">♻️</div>
+                            <h4>Sustainable Materials</h4>
+                            <p>Organic cotton and recycled fabrics</p>
+                        </div>
+                        <div class="usp-item">
+                            <div class="usp-icon">⚡</div>
+                            <h4>Quality Craftsmanship</h4>
+                            <p>Built to last with attention to detail</p>
+                        </div>
+                        <div class="usp-item">
+                            <div class="usp-icon">👥</div>
+                            <h4>Inclusive Sizing</h4>
+                            <p>XS to XXL - fashion for every body</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Proof -->
+            <div class="social-proof-section">
+                <div class="container">
+                    <h2>What Our Customers Say</h2>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p>"Amazing quality and the fit is perfect! I love that they use sustainable materials too."</p>
+                            <div class="customer-info">
+                                <strong>Sarah M.</strong>
+                                <span class="verified">✓ Verified Purchase</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p>"Great customer service and fast shipping. My new go-to for casual wear."</p>
+                            <div class="customer-info">
+                                <strong>Mike R.</strong>
+                                <span class="verified">✓ Verified Purchase</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="stars">⭐⭐⭐⭐</div>
+                            <p>"Stylish designs at affordable prices. The size guide was really helpful!"</p>
+                            <div class="customer-info">
+                                <strong>Emma L.</strong>
+                                <span class="verified">✓ Verified Purchase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="newsletter-section">
+                <div class="container">
+                    <div class="newsletter-card">
+                        <h2>Get 15% Off Your First Order</h2>
+                        <p>Join our community and be the first to know about new drops, exclusive sales, and styling tips.</p>
+                        <form class="newsletter-form" id="newsletter-form">
+                            <input type="email" placeholder="Enter your email address" required class="form-control">
+                            <button type="submit" class="btn btn--primary">Subscribe & Save</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collections Page -->
+        <section id="collections" class="page-section">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Our Collections</h1>
+                    <p>Discover curated styles for every occasion</p>
+                </div>
+                
+                <div class="filters-section">
+                    <div class="filters-header">
+                        <h3>Filters</h3>
+                        <button class="btn btn--outline btn--sm" id="clear-filters">Clear All</button>
+                    </div>
+                    <div class="filters-grid">
+                        <div class="filter-group">
+                            <label>Category</label>
+                            <select class="form-control" id="category-filter">
+                                <option value="">All Categories</option>
+                                <option value="tshirts">T-Shirts</option>
+                                <option value="hoodies">Hoodies</option>
+                                <option value="accessories">Accessories</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label>Price Range</label>
+                            <select class="form-control" id="price-filter">
+                                <option value="">All Prices</option>
+                                <option value="0-25">$0 - $25</option>
+                                <option value="25-50">$25 - $50</option>
+                                <option value="50-100">$50 - $100</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label>Size</label>
+                            <select class="form-control" id="size-filter">
+                                <option value="">All Sizes</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label>Sort By</label>
+                            <select class="form-control" id="sort-filter">
+                                <option value="featured">Featured</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="newest">Newest</option>
+                                <option value="rating">Best Rating</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-section">
+                    <div class="products-header">
+                        <h3 id="products-count">Showing all products</h3>
+                    </div>
+                    <div class="products-grid" id="products-grid">
+                        <!-- Products will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Detail Page -->
+        <section id="product-detail" class="page-section">
+            <div class="container">
+                <div class="product-detail-container" id="product-detail-container">
+                    <!-- Product details will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Shopping Cart -->
+        <section id="cart" class="page-section">
+            <div class="container">
+                <div class="cart-header">
+                    <h1>Shopping Cart</h1>
+                </div>
+                <div class="cart-content" id="cart-content">
+                    <div class="cart-empty" id="cart-empty">
+                        <h3>Your cart is empty</h3>
+                        <p>Looks like you haven't added anything to your cart yet.</p>
+                        <button class="btn btn--primary" onclick="showSection('collections')">Continue Shopping</button>
+                    </div>
+                    <div class="cart-items" id="cart-items" style="display: none;">
+                        <!-- Cart items will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Page -->
+        <section id="about" class="page-section">
+            <div class="container">
+                <div class="about-header">
+                    <h1>About Roar Threads</h1>
+                    <p class="tagline">Unleash Your Style, Empower Your Story</p>
+                </div>
+
+                <div class="founder-section">
+                    <div class="founder-content">
+                        <h2>From Our Founder</h2>
+                        <blockquote>
+                            "Fashion has the power to transform not just how we look, but how we feel about ourselves. When I started Roar Threads, I wanted to create more than just another clothing brand – I wanted to build a movement that celebrates individual expression while making quality fashion accessible to everyone. Every thread we weave tells a story of empowerment, sustainability, and the belief that great style shouldn't break the bank."
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="mission-section">
+                    <h2>Our Mission</h2>
+                    <p>To democratize fashion by providing high-quality, affordable clothing that empowers individuals to express their unique identity while building financial confidence through style.</p>
+                </div>
+
+                <div class="values-section">
+                    <h2>Our Values</h2>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <h4>Sustainability</h4>
+                            <p>We're committed to reducing our environmental footprint through conscious material choices and ethical production.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4>Inclusivity</h4>
+                            <p>Fashion is for everyone. We celebrate diversity and create clothing for all body types and personal styles.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4>Empowerment</h4>
+                            <p>We believe that when you look good, you feel good. Our clothing is designed to boost confidence and self-expression.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4>Quality</h4>
+                            <p>Every piece is crafted with attention to detail and built to last, ensuring you get value for your investment.</p>
+                        </div>
+                        <div class="value-card">
+                            <h4>Innovation</h4>
+                            <p>We continuously evolve our designs, materials, and processes to stay ahead of trends and customer needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page-section">
+            <div class="container">
+                <div class="contact-header">
+                    <h1>Contact Us</h1>
+                    <p>We'd love to hear from you. Get in touch with our team.</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h4>Customer Support</h4>
+                            <p>📧 support@roarthreads.com</p>
+                            <p>📞 1-800-ROAR-TEE</p>
+                            <p>🕒 Mon-Fri: 9AM-6PM EST</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Business Inquiries</h4>
+                            <p>📧 hello@roarthreads.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Press & Media</h4>
+                            <p>📧 press@roarthreads.com</p>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name" class="form-label">Name *</label>
+                            <input type="text" id="contact-name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email" class="form-label">Email *</label>
+                            <input type="email" id="contact-email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject" class="form-label">Subject</label>
+                            <select id="contact-subject" class="form-control">
+                                <option value="">Select a topic</option>
+                                <option value="order">Order Support</option>
+                                <option value="product">Product Question</option>
+                                <option value="return">Returns & Exchanges</option>
+                                <option value="wholesale">Wholesale Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message" class="form-label">Message *</label>
+                            <textarea id="contact-message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Page -->
+        <section id="blog" class="page-section">
+            <div class="container">
+                <div class="blog-header">
+                    <h1>The Roar Blog</h1>
+                    <p>Style tips, sustainability stories, and behind-the-scenes content</p>
+                </div>
+
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/39911dbf-48af-4e86-9077-e07f7a1a32d8.png" alt="Blog Post">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="category">Style Tips</span>
+                                <span class="read-time">3 min read</span>
+                            </div>
+                            <h3>5 Ways to Style Your Basic Tee</h3>
+                            <p>Transform your wardrobe staples with these easy styling tips that will take you from casual to chic in minutes.</p>
+                            <button class="btn btn--outline btn--sm">Read More</button>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/39911dbf-48af-4e86-9077-e07f7a1a32d8.png" alt="Blog Post">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="category">Sustainability</span>
+                                <span class="read-time">5 min read</span>
+                            </div>
+                            <h3>The Journey to Sustainable Fashion</h3>
+                            <p>How we're making fashion more eco-friendly, one thread at a time. Learn about our sustainable practices and materials.</p>
+                            <button class="btn btn--outline btn--sm">Read More</button>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/39911dbf-48af-4e86-9077-e07f7a1a32d8.png" alt="Blog Post">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="category">Fit Guide</span>
+                                <span class="read-time">4 min read</span>
+                            </div>
+                            <h3>Size Guide: Finding Your Perfect Fit</h3>
+                            <p>Everything you need to know about sizing and fit. Get the perfect fit every time with our comprehensive guide.</p>
+                            <button class="btn btn--outline btn--sm">Read More</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Account Section -->
+        <section id="account" class="page-section">
+            <div class="container">
+                <div class="account-header">
+                    <h1>My Account</h1>
+                </div>
+
+                <div class="auth-container" id="auth-container">
+                    <div class="auth-tabs">
+                        <button class="auth-tab active" data-tab="login">Sign In</button>
+                        <button class="auth-tab" data-tab="register">Create Account</button>
+                    </div>
+
+                    <div class="auth-form" id="login-form">
+                        <h3>Welcome Back</h3>
+                        <form>
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control" required>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width">Sign In</button>
+                        </form>
+                        
+                        <div class="auth-divider">or</div>
+                        
+                        <div class="social-login">
+                            <button class="btn btn--outline btn--full-width">Continue with Google</button>
+                            <button class="btn btn--outline btn--full-width">Continue with Apple</button>
+                        </div>
+                    </div>
+
+                    <div class="auth-form" id="register-form" style="display: none;">
+                        <h3>Create Your Account</h3>
+                        <form>
+                            <div class="form-group">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the Terms of Service and Privacy Policy
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width">Create Account</button>
+                        </form>
+                        
+                        <div class="auth-divider">or</div>
+                        
+                        <div class="social-login">
+                            <button class="btn btn--outline btn--full-width">Continue with Google</button>
+                            <button class="btn btn--outline btn--full-width">Continue with Apple</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="account-dashboard" id="account-dashboard" style="display: none;">
+                    <div class="dashboard-nav">
+                        <button class="dashboard-tab active" data-section="overview">Overview</button>
+                        <button class="dashboard-tab" data-section="orders">Orders</button>
+                        <button class="dashboard-tab" data-section="wishlist">Wishlist</button>
+                        <button class="dashboard-tab" data-section="profile">Profile</button>
+                    </div>
+                    
+                    <div class="dashboard-content" id="dashboard-content">
+                        <!-- Dashboard content will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wishlist Section -->
+        <section id="wishlist" class="page-section">
+            <div class="container">
+                <div class="wishlist-header">
+                    <h1>My Wishlist</h1>
+                    <p id="wishlist-description">Save your favorite items for later</p>
+                </div>
+                <div class="wishlist-grid" id="wishlist-grid">
+                    <div class="wishlist-empty" id="wishlist-empty">
+                        <h3>Your wishlist is empty</h3>
+                        <p>Start adding items you love to keep track of them.</p>
+                        <button class="btn btn--primary" onclick="showSection('collections')">Explore Products</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Size Guide Modal -->
+        <div id="size-guide-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Size Guide</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="size-chart">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Size</th>
+                                    <th>Chest (inches)</th>
+                                    <th>Waist (inches)</th>
+                                    <th>Hips (inches)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>XS</td><td>30-32</td><td>24-26</td><td>32-34</td></tr>
+                                <tr><td>S</td><td>32-34</td><td>26-28</td><td>34-36</td></tr>
+                                <tr><td>M</td><td>34-36</td><td>28-30</td><td>36-38</td></tr>
+                                <tr><td>L</td><td>36-38</td><td>30-32</td><td>38-40</td></tr>
+                                <tr><td>XL</td><td>38-40</td><td>32-34</td><td>40-42</td></tr>
+                                <tr><td>XXL</td><td>40-42</td><td>34-36</td><td>42-44</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/dc68dfd9-dbcb-4e28-9958-a9a5940e1ace.png" alt="Roar Threads Logo" class="footer-logo">
+                        <p>Unleash Your Style, Empower Your Story</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#new-arrivals">New Arrivals</a></li>
+                        <li><a href="#best-sellers">Best Sellers</a></li>
+                        <li><a href="#tshirts">T-Shirts</a></li>
+                        <li><a href="#hoodies">Hoodies</a></li>
+                        <li><a href="#accessories">Accessories</a></li>
+                        <li><a href="#sale">Sale</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#" onclick="openSizeGuide()">Size Guide</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#shipping">Shipping & Returns</a></li>
+                        <li><a href="#track">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#sustainability">Sustainability</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank">Instagram</a>
+                        <a href="#" target="_blank">Facebook</a>
+                        <a href="#" target="_blank">Twitter</a>
+                        <a href="#" target="_blank">TikTok</a>
+                    </div>
+                    <div class="payment-methods">
+                        <span>We Accept:</span>
+                        <div class="payment-icons">
+                            💳 💰 🏪 📱
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Roar Threads. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#accessibility">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
